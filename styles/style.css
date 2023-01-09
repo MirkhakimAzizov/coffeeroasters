@@ -1,346 +1,745 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    width: 1440px;
-    padding: 0 80px;
-    margin: 0 auto;
-}
-
-
-/* Font family */
-
-@font-face {
-    font-family: 'Fraunces';
-    src: url(../fonts/fraunces/Fraunces_9pt-Black.ttf);
-    src: url(../fonts/fraunces/Fraunces_9pt-Bold.ttf);
-    src: url(../fonts/fraunces/Fraunces_9pt-Light.ttf);
-    src: url(../fonts/fraunces/Fraunces_9pt-Regular.ttf);
-    src: url(../fonts/fraunces/Fraunces_9pt-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: 'Barlow';
-    src: url(../fonts/barlow/Barlow-Black.ttf);
-    src: url(../fonts/barlow/Barlow-Bold.ttf);
-    src: url(../fonts/barlow/Barlow-ExtraBold.ttf);
-    src: url(../fonts/barlow/Barlow-ExtraLight.ttf);
-    src: url(../fonts/barlow/Barlow-Light.ttf);
-    src: url(../fonts/barlow/Barlow-Regular.ttf);
-    src: url(../fonts/barlow/Barlow-Medium.ttf);
-    src: url(../fonts/barlow/Barlow-SemiBold.ttf);
-}
-
-
-/* Header start */
-
-.header {
-    padding: 45px 0;
-}
-
-.header__main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__main_nav---list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-
-.header__main_nav---list--item {
-    margin-left: 32px;
-}
-
-.header__main_nav---list--item-link {
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.923077px;
-    text-transform: uppercase;
-    color: #83888F;
-    text-decoration: none;
-}
-
-
-/* Main start */
-
-
-/* Section one */
-
-.section {
-    background: url(../images/section_bgr.png);
-    background-size: 1280px 100%;
-    padding: 117px 85px;
-}
-
-.main__section--box {
-    width: 495px;
-}
-
-.main__section--box-title {
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 72px;
-    line-height: 72px;
-    color: #FEFCF7;
-}
-
-.main__section--box-text {
-    margin-top: 32px;
-    margin-bottom: 56px;
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #FEFCF7;
-    mix-blend-mode: normal;
-    opacity: 0.8;
-}
-
-.main__section--box-btn {
-    padding: 16px 32px;
-    background: #0E8784;
-    border-radius: 6px;
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    text-decoration: none;
-    color: #FEFCF7;
-}
-
-
-/* Section two */
-
-.section__two {
-    padding: 0 165px;
-    background-image: url(../images/section_bg.png);
-    background-size: 1111px 196px;
-    background-repeat: no-repeat;
-    background-position: center 135px;
-}
-
-.section__two---cards {
-    padding: 260px 0 180px;
-    display: grid;
-    grid-template-columns: repeat(4, 225px);
-    gap: 30px;
-    list-style: none;
-}
-
-.section__two---cards--item-title {
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    color: #333D4B;
-}
-
-.section__two---cards--item-text {
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #333D4B;
-}
-
-
-/* Section tree */
-
-.section__tree {
-    background-image: url(../images/tree_bg.jpg);
-    background-repeat: no-repeat;
-}
-
-.section__tree--box {
-    padding: 100px 370px 90px;
-}
-
-.section__tree--box-title {
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    color: #FEFCF7;
-}
-
-.section__tree--box-text {
-    margin-top: 32px;
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #FEFCF7;
-    mix-blend-mode: normal;
-    opacity: 0.8;
-}
-
-.section__tree---cards {
-    padding: 0 85px;
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
-    gap: 30px;
-    list-style: none;
-}
-
-.section__tree---cards-item {
-    padding: 72px 48px 48px;
-    background: #0E8784;
-    border-radius: 8px;
-}
-
-.section__tree---cards--item-img {
-    display: block;
-    margin-left: 88px;
-}
-
-.section__tree---cards--item-title {
-    margin: 46px 0 24px;
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    color: #FEFCF7;
-}
-
-.section__tree---cards--item-text {
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #FEFCF7;
-}
-
-
-/* Section four */
-
-.section__four-title {
-    margin: 200px 85px 80px;
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    color: #83888F;
-}
-
-.section__four--line {
-    margin-left: 85px;
-    display: grid;
-    grid-template-columns: repeat(3, 31px);
-    gap: 349px;
-}
-
-.section__four--line-circile {
-    display: flex;
-}
-
-.section__four---cards {
-    padding: 70px 85px 65px;
-    display: grid;
-    grid-template-columns: repeat(3, 285px);
-    gap: 95px;
-    list-style: none;
-}
-
-.section__four---cards--item-title {
-    width: 215px;
-    margin: 38px 0 42px;
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 36px;
-    color: #333D4B;
-}
-
-.section__four---cards--item-text {
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #333D4B;
-}
-
-.section__four-btn {
-    padding: 16px 32px;
-    margin: 64px 85px 200px;
-    display: inline-block;
-    background: #0E8784;
-    border-radius: 6px;
-    font-family: 'Fraunces 9pt';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    text-decoration: none;
-    color: #FEFCF7;
-}
-
-
-/* Footer start */
-
-.footer {
-    margin-bottom: 90px;
-}
-
-.footer__field {
-    padding: 48.5px 85px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #2C343E;
-}
-
-.footer__field---nav {
-    display: flex;
-    list-style: none;
-}
-
-.footer__field---nav--item {
-    margin-left: 32px;
-}
-
-.footer__field---nav--item-link {
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.923077px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #83888F;
-}
-
-.footer__field--btn-link {
-    display: inline-block;
-    margin-left: 24px;
-}
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    
+                    .container {
+                        width: 1440px;
+                        padding: 0 80px;
+                        margin: 0 auto;
+                    }
+                    /* Font family */
+                    
+                    @font-face {
+                        font-family: 'Fraunces';
+                        src: url(../fonts/fraunces/Fraunces_9pt-Black.ttf);
+                        src: url(../fonts/fraunces/Fraunces_9pt-Bold.ttf);
+                        src: url(../fonts/fraunces/Fraunces_9pt-Light.ttf);
+                        src: url(../fonts/fraunces/Fraunces_9pt-Regular.ttf);
+                        src: url(../fonts/fraunces/Fraunces_9pt-SemiBold.ttf);
+                    }
+                    
+                    @font-face {
+                        font-family: 'Barlow';
+                        src: url(../fonts/barlow/Barlow-Black.ttf);
+                        src: url(../fonts/barlow/Barlow-Bold.ttf);
+                        src: url(../fonts/barlow/Barlow-ExtraBold.ttf);
+                        src: url(../fonts/barlow/Barlow-ExtraLight.ttf);
+                        src: url(../fonts/barlow/Barlow-Light.ttf);
+                        src: url(../fonts/barlow/Barlow-Regular.ttf);
+                        src: url(../fonts/barlow/Barlow-Medium.ttf);
+                        src: url(../fonts/barlow/Barlow-SemiBold.ttf);
+                    }
+                    /* Header start */
+                    
+                    .header {
+                        padding: 45px 0;
+                    }
+                    
+                    .header__main {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+                    .header__main_nav---list {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        list-style: none;
+                    }
+                    
+                    .header__main_nav---list--item {
+                        margin-left: 32px;
+                    }
+                    
+                    .header__main_nav---list--item-link {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 0.923077px;
+                        text-transform: uppercase;
+                        color: #83888F;
+                        text-decoration: none;
+                    }
+                    /* Main start */
+                    /* Section one */
+                    
+                    .section {
+                        background: url(../images/section_bgr.png);
+                        background-size: 1280px 100%;
+                        padding: 117px 85px;
+                    }
+                    
+                    .main__section--box {
+                        width: 495px;
+                    }
+                    
+                    .main__section--box-title {
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 72px;
+                        line-height: 72px;
+                        color: #FEFCF7;
+                    }
+                    
+                    .main__section--box-text {
+                        margin-top: 32px;
+                        margin-bottom: 56px;
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #FEFCF7;
+                        mix-blend-mode: normal;
+                        opacity: 0.8;
+                    }
+                    
+                    .main__section--box-btn {
+                        padding: 16px 32px;
+                        background: #0E8784;
+                        border-radius: 6px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: center;
+                        text-decoration: none;
+                        color: #FEFCF7;
+                    }
+                    /* Section two */
+                    
+                    .section__two {
+                        padding: 0 165px;
+                        background-image: url(../images/section_bg.png);
+                        background-size: 1111px 196px;
+                        background-repeat: no-repeat;
+                        background-position: center 135px;
+                    }
+                    
+                    .section__two---cards {
+                        padding: 260px 0 180px;
+                        display: grid;
+                        grid-template-columns: repeat(4, 225px);
+                        gap: 30px;
+                        list-style: none;
+                    }
+                    
+                    .section__two---cards--item-title {
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 24px;
+                        line-height: 32px;
+                        text-align: center;
+                        color: #333D4B;
+                    }
+                    
+                    .section__two---cards--item-text {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        text-align: center;
+                        color: #333D4B;
+                    }
+                    /* Section tree */
+                    
+                    .section__tree {
+                        background-image: url(../images/tree_bg.jpg);
+                        background-repeat: no-repeat;
+                    }
+                    
+                    .section__tree--box {
+                        padding: 100px 370px 90px;
+                    }
+                    
+                    .section__tree--box-title {
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 40px;
+                        line-height: 48px;
+                        text-align: center;
+                        color: #FEFCF7;
+                    }
+                    
+                    .section__tree--box-text {
+                        margin-top: 32px;
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        text-align: center;
+                        color: #FEFCF7;
+                        mix-blend-mode: normal;
+                        opacity: 0.8;
+                    }
+                    
+                    .section__tree---cards {
+                        padding: 0 85px;
+                        display: grid;
+                        grid-template-columns: repeat(3, 350px);
+                        gap: 30px;
+                        list-style: none;
+                    }
+                    
+                    .section__tree---cards-item {
+                        padding: 72px 48px 48px;
+                        background: #0E8784;
+                        border-radius: 8px;
+                    }
+                    
+                    .section__tree---cards--item-img {
+                        display: block;
+                        margin-left: 88px;
+                    }
+                    
+                    .section__tree---cards--item-title {
+                        margin: 46px 0 24px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 24px;
+                        line-height: 32px;
+                        text-align: center;
+                        color: #FEFCF7;
+                    }
+                    
+                    .section__tree---cards--item-text {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        text-align: center;
+                        color: #FEFCF7;
+                    }
+                    /* Section four */
+                    
+                    .section__four-title {
+                        margin: 200px 85px 80px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 24px;
+                        line-height: 32px;
+                        color: #83888F;
+                    }
+                    
+                    .section__four--line {
+                        margin-left: 85px;
+                        display: grid;
+                        grid-template-columns: repeat(3, 31px);
+                        gap: 349px;
+                    }
+                    
+                    .section__four--line-circile {
+                        display: flex;
+                    }
+                    
+                    .section__four---cards {
+                        padding: 70px 85px 65px;
+                        display: grid;
+                        grid-template-columns: repeat(3, 285px);
+                        gap: 95px;
+                        list-style: none;
+                    }
+                    
+                    .section__four---cards--item-title {
+                        width: 215px;
+                        margin: 38px 0 42px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 32px;
+                        line-height: 36px;
+                        color: #333D4B;
+                    }
+                    
+                    .section__four---cards--item-text {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #333D4B;
+                    }
+                    
+                    .section__four-btn {
+                        padding: 16px 32px;
+                        margin: 64px 85px 200px;
+                        display: inline-block;
+                        background: #0E8784;
+                        border-radius: 6px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: center;
+                        text-decoration: none;
+                        color: #FEFCF7;
+                    }
+                    /* Footer start */
+                    
+                    .footer {
+                        margin-bottom: 90px;
+                    }
+                    
+                    .footer__field {
+                        padding: 48.5px 85px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background: #2C343E;
+                    }
+                    
+                    .footer__field---nav {
+                        display: flex;
+                        list-style: none;
+                    }
+                    
+                    .footer__field---nav--item {
+                        margin-left: 32px;
+                    }
+                    
+                    .footer__field---nav--item-link {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 0.923077px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: #83888F;
+                    }
+                    
+                    .footer__field--btn-link {
+                        display: inline-block;
+                        margin-left: 24px;
+                    }
+                    /* Index.html end */
+                    /* About us start */
+                    
+                    .about__main_section {
+                        padding: 137px 85px;
+                        background-image: url(../images/about_bg.jpg);
+                        background-size: 100% 450px;
+                    }
+                    
+                    .about__main_field--box {
+                        width: 445px;
+                    }
+                    
+                    .about__main_field--box-title {
+                        margin-bottom: 24px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 40px;
+                        line-height: 48px;
+                        color: #FEFCF7;
+                    }
+                    
+                    .about__main_field--box-text {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #FEFCF7;
+                    }
+                    /* About main section two start */
+                    
+                    .about___main__section_two {
+                        margin: 170px 85px 245px;
+                    }
+                    
+                    .about___main__section_two-field {
+                        display: flex;
+                        height: 520px;
+                        justify-content: flex-end;
+                        align-items: center;
+                        background-image: url(../images/about_two_bg.png);
+                        background-repeat: no-repeat;
+                        background-size: 445px 520px;
+                        background-clip: border-box;
+                    }
+                    
+                    .about___main__section_two--box {
+                        width: 540px;
+                    }
+                    
+                    .about___main__section_two--box-title {
+                        margin-bottom: 24px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 40px;
+                        line-height: 48px;
+                        color: #333D4B;
+                    }
+                    
+                    .about___main__section_two--box-text {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #333D4B;
+                        mix-blend-mode: normal;
+                        opacity: 0.8;
+                    }
+                    /* About main section two end */
+                    
+                    .about___main__section_tree {
+                        position: relative;
+                        padding: 88px 85px 176px;
+                        background-image: url(../images/about_tree_bg.png);
+                        background-size: 100% 474px;
+                        background-repeat: no-repeat;
+                    }
+                    
+                    .about___main__section_tree--box {
+                        width: 540px;
+                    }
+                    
+                    .about___main__section_tree--box-title {
+                        margin-bottom: 32px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 40px;
+                        line-height: 48px;
+                        color: #FEFCF7;
+                    }
+                    
+                    .about___main__section_tree--box-text {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #FEFCF7;
+                        mix-blend-mode: normal;
+                        opacity: 0.8;
+                    }
+                    
+                    .about___main__section_tree-img {
+                        position: absolute;
+                        left: 750px;
+                        bottom: 88px;
+                    }
+                    /* About main section tree end */
+                    
+                    .about___main__section_four {
+                        width: 1045px;
+                        padding: 170px 85px;
+                    }
+                    
+                    .about___main__section_four-title {
+                        margin-bottom: 72px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 24px;
+                        line-height: 32px;
+                        color: #83888F;
+                    }
+                    
+                    .about___main__section_four---card {
+                        display: flex;
+                        justify-content: space-between;
+                        list-style: none;
+                    }
+                    
+                    .about___main__section_four---card--item-title {
+                        margin: 46px 0 24px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 32px;
+                        line-height: 36px;
+                        color: #333D4B;
+                    }
+                    
+                    .about___main__section_four---card--item-link {
+                        display: block;
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        text-decoration: none;
+                        color: #333D4B;
+                    }
+                    /* ABOUT US PAGE END */
+                    /* CREATWE PAGE START */
+                    
+                    .create___main__section {
+                        padding: 135px 85px;
+                        background-image: url(../images/create_html.jpg);
+                        background-size: 100% 450px;
+                        background-repeat: no-repeat;
+                    }
+                    
+                    .create___main__section--box {
+                        width: 485px;
+                    }
+                    
+                    .create___main__section--box-title {
+                        margin-bottom: 32px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 72px;
+                        line-height: 72px;
+                        color: #FEFCF7;
+                    }
+                    
+                    .create___main__section--box-text {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #FEFCF7;
+                        mix-blend-mode: normal;
+                        opacity: 0.8;
+                    }
+                    /* Create main section one end */
+                    
+                    .create___main__section_two {
+                        margin: 170px 0 70px;
+                        padding: 90px 85px 107px;
+                        background-image: url(../images/create_bg.png);
+                        background-repeat: no-repeat;
+                    }
+                    
+                    .create___main__section_two--line {
+                        padding: 0 0 70px;
+                        display: grid;
+                        grid-template-columns: repeat(3, 31px);
+                        gap: 349px;
+                    }
+                    
+                    .create___main__section_two--line-img {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    
+                    .create___main__section_two---card {
+                        display: grid;
+                        grid-template-columns: repeat(3, 285px);
+                        gap: 95px;
+                        list-style: none;
+                    }
+                    
+                    .create___main__section_two---card--item-number {
+                        display: block;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 72px;
+                        line-height: 72px;
+                        color: #FDD6BA;
+                    }
+                    
+                    .create___main__section_two---card--item-title {
+                        width: 215px;
+                        margin: 38px 0 42px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 32px;
+                        line-height: 36px;
+                        color: #FEFCF7;
+                    }
+                    
+                    .create___main__section_two---card--item-text {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #FEFCF7;
+                    }
+                    /* Create section two end */
+                    
+                    .create_article {
+                        padding: 0 85px 170px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    
+                    .article__left {
+                        width: 255px;
+                        padding-top: 70px;
+                    }
+                    
+                    .article__left_box-link {
+                        padding: 24px 0;
+                        border-bottom: 1px solid rgba(131, 136, 143, 0.7);
+                        display: block;
+                        text-decoration: none;
+                        font-family: 'Fraunces';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 24px;
+                        line-height: 32px;
+                        opacity: 0.5;
+                        color: #333D4B;
+                    }
+                    
+                    .article__right {
+                        width: 730px;
+                    }
+                    
+                    .article__right_box {
+                        margin: 0;
+                    }
+                    
+                    .article__right_box-title {
+                        position: relative;
+                        margin: 88px 0 56px;
+                        font-family: 'Fraunces';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 40px;
+                        line-height: 48px;
+                        color: #83888F;
+                    }
+                    
+                    .article__right_box-title::after {
+                        position: absolute;
+                        right: 0;
+                        top: 25px;
+                        content: "";
+                        width: 19px;
+                        height: 12px;
+                        display: inline-block;
+                        background-image: url(../images/drop.svg);
+                    }
+                    
+                    .article__right_box---card {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        list-style: none;
+                    }
+                    
+                    .article__right_box---card--item {
+                        width: 228px;
+                        padding: 32px 28px 84px;
+                        background: #F4F1EB;
+                        border-radius: 8px;
+                    }
+                    
+                    .article__right_box---card--item0 {
+                        width: 228px;
+                        padding: 32px 28px 84px;
+                        background: #0E8784;
+                        border-radius: 8px;
+                    }
+                    
+                    .article__right_box---card--item-title {
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 24px;
+                        line-height: 32px;
+                        color: #333D4B;
+                    }
+                    
+                    .article__right_box---card--item-title0 {
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 24px;
+                        line-height: 32px;
+                        color: #FFFFFF;
+                    }
+                    
+                    .article__right_box---card--item-text {
+                        margin-top: 24px;
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #333D4B;
+                    }
+                    
+                    .article__right_box---card--item-text0 {
+                        margin-top: 24px;
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #FFFFFF;
+                    }
+                    
+                    .article__info {
+                        margin-top: 85px;
+                        background-color: #000;
+                        padding: 30px 65px;
+                    }
+                    
+                    .article__info-title {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
+                    }
+                    
+                    .article__info-text {
+                        margin-top: 8px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 24px;
+                        line-height: 40px;
+                        color: #FFFFFF;
+                    }
+                    
+                    .color {
+                        color: #0E8784;
+                    }
+                    
+                    .btn {
+                        display: flex;
+                        justify-content: end;
+                    }
+                    
+                    .article-btn {
+                        margin-top: 40px;
+                        padding: 15px 35px;
+                        display: inline-block;
+                        background: #0E8784;
+                        border-radius: 6px;
+                        font-family: 'Fraunces 9pt';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: #FEFCF7;
+                        text-decoration: none;
+                    }
