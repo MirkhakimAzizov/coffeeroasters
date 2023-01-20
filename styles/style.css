@@ -65,13 +65,18 @@
                         color: #83888F;
                         text-decoration: none;
                     }
+                    
+                    .header__manu {
+                        display: none;
+                    }
                     /* Main start */
                     /* Section one */
                     
                     .section {
-                        background: url(../images/section_bgr.png);
                         background-size: 1280px 100%;
                         padding: 117px 85px;
+                        background-image: url(../images/home_bg.jpg);
+                        background-repeat: no-repeat;
                     }
                     
                     .main__section--box {
@@ -252,6 +257,15 @@
                         grid-template-columns: repeat(3, 285px);
                         gap: 95px;
                         list-style: none;
+                    }
+                    
+                    .section__four---cards--item-number {
+                        font-family: 'Fraunces';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 72px;
+                        line-height: 72px;
+                        color: #FDD6BA;
                     }
                     
                     .section__four---cards--item-title {
@@ -588,6 +602,10 @@
                         padding-top: 70px;
                     }
                     
+                    .article__left_box {
+                        list-style: none;
+                    }
+                    
                     .article__left_box-link {
                         padding: 24px 0;
                         border-bottom: 1px solid rgba(131, 136, 143, 0.7);
@@ -608,10 +626,12 @@
                     
                     .article__right_box {
                         margin: 0;
+                        position: relative;
                     }
                     
                     .article__right_box-title {
                         position: relative;
+                        display: inline-block;
                         margin: 88px 0 56px;
                         font-family: 'Fraunces';
                         font-style: normal;
@@ -621,15 +641,15 @@
                         color: #83888F;
                     }
                     
-                    .article__right_box-title::after {
-                        position: absolute;
-                        right: 0;
-                        top: 25px;
-                        content: "";
-                        width: 19px;
-                        height: 12px;
+                    .article__right_box-btn {
                         display: inline-block;
+                        position: absolute;
+                        top: 110px;
+                        right: 0;
+                        border: none;
+                        background-color: #FFFFFF;
                         background-image: url(../images/drop.svg);
+                        background-repeat: no-repeat;
                     }
                     
                     .article__right_box---card {
@@ -742,4 +762,399 @@
                         text-align: center;
                         color: #FEFCF7;
                         text-decoration: none;
+                    }
+                    
+                    @media only screen and (max-width:768px) {
+                        .container {
+                            max-width: 768px;
+                            padding: 0 40px;
+                            margin: 0 auto;
+                        }
+                        /* section one */
+                        .section {
+                            background-size: 100% 100%;
+                            background-position: 50% center;
+                            padding: 100px 60px;
+                        }
+                        /* section two */
+                        .section__two {
+                            padding: 0;
+                            background-size: 600px 120px;
+                        }
+                        .section__two---cards {
+                            padding: 260px 0 180px;
+                            display: flex;
+                            flex-direction: column;
+                            list-style: none;
+                        }
+                        .section__two---cards--item {
+                            width: 573px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .section__two---cards--item-info {
+                            text-align: left;
+                        }
+                        .section__two---cards--item-title {
+                            text-align: left;
+                            margin-bottom: 24px;
+                        }
+                        .section__two---cards--item-text {
+                            text-align: left;
+                            font-size: 15px;
+                            line-height: 25px;
+                        }
+                        /* section tree */
+                        .section__tree {
+                            background-size: 690px 570px;
+                        }
+                        .section__tree--box {
+                            padding: 50px 70px 70px;
+                            width: 650px;
+                        }
+                        .section__tree---cards {
+                            display: flex;
+                            flex-direction: column;
+                            list-style: none;
+                        }
+                        .section__tree---cards-item {
+                            display: flex;
+                            align-items: center;
+                            padding: 40px;
+                        }
+                        .section__tree---cards--item-img {
+                            margin: 0;
+                        }
+                        .section__tree---cards--item-info {
+                            margin-left: 25px;
+                        }
+                        .section__tree---cards--item-title {
+                            margin: 0;
+                            text-align: left;
+                        }
+                        .section__tree---cards--item-text {
+                            margin-top: 20px;
+                            text-align: left;
+                        }
+                        /* section four */
+                        .section__four-title {
+                            margin: 200px 85px 80px;
+                        }
+                        .section__four--line {
+                            gap: 180px;
+                        }
+                        .section__four--line-hr {
+                            width: 400px;
+                        }
+                        .section__four---cards {
+                            padding: 70px 85px 65px;
+                            display: grid;
+                            grid-template-columns: repeat(3, 200px);
+                            gap: 10px;
+                            list-style: none;
+                        }
+                        .section__four-btn {
+                            margin: 44px 85px 144px;
+                        }
+                        /* footer */
+                        .footer__field {
+                            padding: 48.5px 85px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                            background: #2C343E;
+                        }
+                        .footer__field---nav {
+                            margin: 35px 0 65px;
+                        }
+                        /* about page section one */
+                        .about__main_section {
+                            padding: 120px 60px;
+                            background-size: 100% 100%;
+                            background-repeat: no-repeat;
+                        }
+                        .about__main_field--box {
+                            width: 390px;
+                        }
+                        /* about section two */
+                        .about___main__section_two {
+                            margin: 150px 0px;
+                        }
+                        .about___main__section_two-field {
+                            display: flex;
+                            height: 520px;
+                            justify-content: flex-end;
+                            align-items: stretch;
+                            background-image: url(../images/about_two_bg.png);
+                            background-repeat: no-repeat;
+                            background-size: 280px 470px;
+                            background-clip: border-box;
+                        }
+                        .about___main__section_two--box {
+                            width: 380px;
+                        }
+                        .about___main__section_two--box-title {
+                            margin-bottom: 30px;
+                        }
+                        /* about tree section */
+                        .about___main__section_tree {
+                            position: relative;
+                            padding: 225px 74px 67px;
+                            background-image: url(../images/about_tree_bg.png);
+                            background-size: 100% 474px;
+                            background-repeat: no-repeat;
+                        }
+                        .about___main__section_tree--box {
+                            width: 540px;
+                        }
+                        .about___main__section_tree--box-title {
+                            text-align: center;
+                        }
+                        .about___main__section_tree--box-text {
+                            text-align: center;
+                        }
+                        .about___main__section_tree-img {
+                            height: 300px;
+                            width: 500px;
+                            position: absolute;
+                            left: 50px;
+                            bottom: 180px;
+                        }
+                        /* about section four */
+                        .about___main__section_four {
+                            width: 1045px;
+                            padding: 144px 0;
+                        }
+                        .about___main__section_four-title {
+                            margin-bottom: 72px;
+                            font-family: 'Fraunces 9pt';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 24px;
+                            line-height: 32px;
+                            color: #83888F;
+                        }
+                        .about___main__section_four---card {
+                            width: 690px;
+                            display: flex;
+                            justify-content: space-between;
+                            list-style: none;
+                        }
+                        .about___main__section_four---card--item-title {
+                            margin: 46px 0 24px;
+                            font-family: 'Fraunces 9pt';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 32px;
+                            line-height: 36px;
+                            color: #333D4B;
+                        }
+                        .about___main__section_four---card--item-link {
+                            display: block;
+                            font-family: 'Barlow';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 26px;
+                            text-decoration: none;
+                            color: #333D4B;
+                        }
+                    }
+                    
+                    @media only screen and (max-width:375px) {
+                        .container {
+                            max-width: 375px;
+                            padding: 0 25px;
+                            margin: 0 auto;
+                        }
+                        /* header nav */
+                        .header__main_nav---list {
+                            display: none;
+                        }
+                        .header__manu {
+                            width: 16px;
+                            height: 15px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                        }
+                        .header__manu-line {
+                            width: 16px;
+                            height: 3px;
+                            display: block;
+                            background: #333D4B;
+                            border-radius: 1.5px;
+                        }
+                        /* section one */
+                        .section {
+                            background-size: 100% 100%;
+                            background-position: center;
+                            padding: 100px 24px;
+                        }
+                        .main__section--box {
+                            width: 280px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        .main__section--box-title {
+                            font-family: 'Fraunces 9pt';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            color: #FEFCF7;
+                        }
+                        .main__section--box-text {
+                            font-family: 'Barlow';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 25px;
+                            text-align: center;
+                            color: #FEFCF7;
+                            mix-blend-mode: normal;
+                            opacity: 0.8;
+                        }
+                        /* section two */
+                        .section__two {
+                            padding: 0;
+                            background-size: 325px 72px;
+                        }
+                        .section__two---cards {
+                            padding: 260px 23px 180px;
+                            display: flex;
+                            flex-direction: column;
+                            list-style: none;
+                        }
+                        .section__two---cards--item {
+                            width: 280px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        .section__two---cards--item-info {
+                            width: 280px;
+                        }
+                        .section__two---cards--item-title {
+                            margin-bottom: 24px;
+                            text-align: center;
+                        }
+                        .section__two---cards--item-text {
+                            font-size: 15px;
+                            line-height: 25px;
+                            text-align: center;
+                        }
+                        /* section tree */
+                        .section__tree {
+                            background-size: 325px 900px;
+                        }
+                        .section__tree--box {
+                            padding: 64px 24px;
+                            width: 325px;
+                        }
+                        .section__tree---cards {
+                            padding: 0 23px;
+                            display: flex;
+                            flex-direction: column;
+                            list-style: none;
+                        }
+                        .section__tree---cards-item {
+                            width: 280px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 40px;
+                        }
+                        .section__tree---cards--item-img {
+                            margin: 0;
+                        }
+                        .section__tree---cards--item-info {
+                            margin-left: 0px;
+                            width: 210px;
+                        }
+                        .section__tree---cards--item-title {
+                            margin-top: 56px;
+                            text-align: center;
+                        }
+                        .section__tree---cards--item-text {
+                            margin-top: 20px;
+                            text-align: center;
+                        }
+                        /* section four */
+                        .section__four-title {
+                            margin: 200px 85px 80px;
+                        }
+                        .section__four--line {
+                            display: none;
+                        }
+                        .section__four---cards {
+                            padding: 55px 23px;
+                            display: grid;
+                            grid-template-columns: repeat(3, 200px);
+                            gap: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            list-style: none;
+                        }
+                        .section__four---cards--item {
+                            padding: 25px 0;
+                            width: 325px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        .section__four---cards--item-title {
+                            width: 325px;
+                            margin: 38px 0 42px;
+                            font-family: 'Fraunces 9pt';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 32px;
+                            line-height: 36px;
+                            color: #333D4B;
+                            text-align: center;
+                        }
+                        .section__four---cards--item-text {
+                            font-family: 'Barlow';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 26px;
+                            color: #333D4B;
+                            text-align: center;
+                        }
+                        .section__four-btn {
+                            margin: 44px 65px 144px;
+                        }
+                        /* footer */
+                        .footer__field {
+                            padding: 55px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                            background: #2C343E;
+                        }
+                        .footer__field---nav {
+                            margin: 35px 0 65px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        .footer__field---nav--item {
+                            margin-left: 0px;
+                            margin-top: 15px;
+                        }
+                        .footer__field--btn {
+                            width: 135px;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        .footer__field--btn-link {
+                            margin: 0;
+                        }
                     }
