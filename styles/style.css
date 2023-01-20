@@ -766,7 +766,7 @@
                     
                     @media only screen and (max-width:768px) {
                         .container {
-                            max-width: 768px;
+                            width: 768px;
                             padding: 0 40px;
                             margin: 0 auto;
                         }
@@ -923,7 +923,7 @@
                         }
                         /* about section four */
                         .about___main__section_four {
-                            width: 1045px;
+                            width: 690px;
                             padding: 144px 0;
                         }
                         .about___main__section_four-title {
